@@ -1,0 +1,53 @@
+.card {
+  margin : 7.5rem 0;
+  padding : 5rem;
+  box-shadow: 2px 2px 5px rgba(0,0,0,.1);
+  background-color: #fff;
+  max-width : 32rem;
+  font-size: 1.6rem;
+  position: relative;
+  border-radius: 3px;
+}
+
+.card__text::before {
+  content: "";
+  background-image: url(/images/icon-quotes.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  position: absolute;
+  top : -2.5rem;
+  left : 0;
+  height: 2rem;
+  width : 2rem;
+  z-index: 10;
+}
+
+.card__text {
+  position: relative;
+  line-height: 1.5;
+}
+
+.card__person {
+  display: flex;
+  align-items: center;
+}
+.card__person__img {
+  margin-right: 1rem;
+}
+
+.card__person__img img {
+  border-radius: 50%;
+  width: 4rem;
+}
+
+.card__person__name {
+
+}
+.card__person__name__name {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: .3rem;
+}
+.card__person__name__title {
+  font-size: 1.5rem;
+}

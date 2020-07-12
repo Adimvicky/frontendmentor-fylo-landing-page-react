@@ -1,0 +1,20 @@
+.a {
+  color : var(--color-accent-cyan);
+  padding-bottom : .5rem;
+  border-bottom: 1.5px solid;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.a::after {
+  content: "";
+  background-image: url(/images/icon-arrow.svg);
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left : 4px;
+}
