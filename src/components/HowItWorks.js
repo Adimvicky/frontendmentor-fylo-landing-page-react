@@ -23,7 +23,7 @@ export default function HowItWorks(){
           <TestimonialCard />
         </div>
         <div className="section-how__figure">
-          <img src="/images/illustration-2.svg" alt=""/>
+          <img src="./images/illustration-2.svg" alt=""/>
         </div>
       </section>
     </Fragment>

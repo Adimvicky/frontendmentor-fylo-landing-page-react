@@ -21,6 +21,7 @@
   --bg : 7.5rem;
   --md : 5rem;
   --sm : 2.5rem;
+  --xs : 1.8rem;
 
   --font-rale : "Raleway",san-serif;
   --font-sans : "Open Sans", sans-serif;
@@ -72,11 +73,11 @@ a {
 }
 
 /* Layout */
-section, header {
-  padding : 6rem;
+section, header, footer {
+  padding : 10rem 6rem;
 }
 section:not(:last-child) {
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
 }
 .header {
   font-family: var(--font-rale);
@@ -144,10 +145,68 @@ section:not(:last-child) {
   max-width: 65rem;
 }
 
+.cta {
+  display : flex;
+  background-color : slategray;
+  color : #fff;
+  justify-content : space-between;
+  align-items : center;
+}
 
+.cta__text {
+  flex : 50%;
+  max-width : 55rem;
+  width : 100%;
+}
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.cta__form {
+  flex : 50%;
+  margin-left: 8rem;
+}
+
+.footer {
+  background-color : var(--color-primary-dark);
+  color : #fff;
+  padding : 8rem;
+  padding-right: 20rem;
+  padding-bottom: 2rem;
+}
+.footer__text {
+  font-size: 1.8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin : 4rem 0 10rem 0;
+}
+.footer__links > li:not(:last-child){
+  margin-bottom: 1.8rem;
+}
+.footer__socials {
+  display: flex;
+  align-items: center;
+}
+.footer__socials li {
+  border : 1px solid #fff;
+  border-radius: 50%;
+  height : 3.5rem;
+  width: 3.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.footer__socials li:hover {
+  color : var(--color-accent-cyan);
+  background-color: #fff;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.attribution { font-size: 1.5rem; text-align: center; }
+.attribution a { color: var(--color-accent-cyan); }
 
 
 /* Utilities */
@@ -196,6 +255,10 @@ section:not(:last-child) {
   margin-top: var(--sm);
   margin-bottom: var(--sm);
 }
+.my-xs {
+  margin-top : var(--xs);
+  margin-bottom: var(--xs);
+}
 
 .mb-bg {
   margin-bottom: var(--bg);
@@ -217,3 +280,37 @@ section:not(:last-child) {
   margin-top: var(--sm);
 }
 
+
+
+@media screen and (max-width : 62.5em){
+ html {
+   font-size: 55%;
+ }
+}
+@media screen and (max-width : 56.25em){
+  .section-hero {
+    flex-direction: column;
+  }
+  .section-hero__text {
+    margin : 5rem 0;
+  }
+  .section-hero__figure {
+    order : -1;
+    margin : 2rem 0 5rem 0;
+  }
+  .section-hero__cta {
+    flex-direction: column;
+  }
+  .section-hero__cta > * {
+    width : 90%;
+    margin : 1rem 0;
+  }
+  .section-how {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-how__figure {
+    order : -1;
+    margin : 5rem 0;
+  }
+}

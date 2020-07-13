@@ -5,7 +5,7 @@ function Header(){
     <header class="header">
       <nav class="header__nav">
         <div class="header__logo">
-          <img src="/images/logo.svg"></img>
+          <img src="./images/logo.svg"></img>
         </div>
         <ul class="header__list">
           <li className="header__list-item"><a href="#">Features</a></li>
